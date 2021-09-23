@@ -1,0 +1,255 @@
+h1,
+h2,
+p {
+  font-family: "Spartan", sans-serif;
+}
+
+h1 {
+  color: #502050;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+p {
+  font-weight: 500;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+:root {
+  --fs-900: 2rem;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-900: 3rem;
+  }
+}
+
+.header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    text-align: start;
+  }
+}
+
+.header__title {
+  margin-bottom: 1.8rem;
+  letter-spacing: -1.14px;
+}
+
+@media (min-width: 1024px) {
+  .header__title {
+    letter-spacing: -1.71px;
+  }
+}
+
+.header__des {
+  color: #937b92;
+  font-size: 0.9375rem;
+  letter-spacing: -0.5px;
+}
+
+.stars__reviews {
+  background-color: #f7f2f7;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+
+@media (min-width: 1024px) {
+  .stars__reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 445px;
+  }
+  .stars__reviews:first-of-type {
+    -webkit-transform: translateX(-3rem);
+            transform: translateX(-3rem);
+  }
+  .stars__reviews:last-of-type {
+    -webkit-transform: translateX(3rem);
+            transform: translateX(3rem);
+  }
+}
+
+.stars__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.1rem;
+}
+
+@media (min-width: 1024px) {
+  .stars__list {
+    margin-right: 2rem;
+  }
+}
+
+.stars__list li {
+  margin-left: 8px;
+}
+
+.stars__paragraph {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .stars {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.quotes__item {
+  margin-bottom: 1rem;
+  padding: 2.5rem 2rem 2rem;
+  background-color: #502050;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.quotes__item img {
+  max-width: 100%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  .quotes__item:first-of-type {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  .quotes__item:last-of-type {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
+.quotes__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quotes__info {
+  margin-left: 1.4375rem;
+}
+
+.quotes__title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.quotes__status {
+  color: #ee68a4;
+  font-size: 0.8125rem;
+}
+
+.quotes__comment {
+  font-size: 0.8125rem;
+  padding-top: 1.625rem;
+  letter-spacing: -0.23px;
+}
+
+@media (min-width: 1024px) {
+  .quotes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  line-height: 1.6;
+  font-size: 0.9375rem;
+  margin-top: 5rem;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin-top: 7.9rem;
+  }
+}
+
+body::before {
+  content: "";
+  background-image: url(../images/bg-pattern-top-mobile.svg);
+  position: absolute;
+}
+
+h1 {
+  font-size: var(--fs-900);
+}
+
+main {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    gap: 4rem;
+  }
+}
+
+.header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.stars {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.quotes {
+  grid-column: 1/-1;
+}
+/*# sourceMappingURL=style.css.map */

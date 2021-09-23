@@ -1,0 +1,40 @@
+.stars {
+  &__reviews {
+    background-color: $light-grayish-purple;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    @include respond-to(large) {
+      display: flex;
+      justify-content: center;
+      max-width: 445px;
+      &:first-of-type {
+        transform: translateX(-3rem);
+      }
+      &:last-of-type {
+        transform: translateX(3rem);
+      }
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.1rem;
+    @include respond-to(large) {
+      margin-right: 2rem;
+    }
+    li {
+      margin-left: 8px;
+    }
+  }
+  &__paragraph {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  @include respond-to(large) {
+    align-self: center;
+  }
+}

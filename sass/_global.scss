@@ -1,0 +1,58 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  line-height: 1.6;
+  font-size: 0.9375rem;
+  margin-top: 5rem;
+  position: relative;
+  @include respond-to(large) {
+    margin-top: 7.9rem;
+  }
+}
+
+body::before {
+  content: "";
+  background-image: url(../images/bg-pattern-top-mobile.svg);
+  position: absolute;
+}
+
+h1 {
+  font-size: var(--fs-900);
+}
+
+main {
+  padding-left: 25px;
+  padding-right: 25px;
+  @include respond-to(large) {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 4rem;
+  }
+}
+
+.header {
+  grid-column: 1/2;
+}
+
+.stars {
+  grid-column: 2/3;
+}
+
+.quotes {
+  grid-column: 1/-1;
+}

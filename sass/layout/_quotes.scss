@@ -1,0 +1,54 @@
+.quotes {
+  &__item {
+    margin-bottom: 1rem;
+    padding: 2.5rem 2rem 2rem;
+    background-color: $very-dark-purple;
+    border-radius: 8px;
+    color: #fff;
+
+    img {
+      max-width: 100%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    @include respond-to(large) {
+      &:first-of-type {
+        transform: translateY(-1rem);
+      }
+      &:last-of-type {
+        transform: translateY(1rem);
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+  }
+
+  &__info {
+    margin-left: 1.4375rem;
+  }
+
+  &__title {
+    font-size: 0.8125rem;
+    font-weight: $bold;
+  }
+
+  &__status {
+    color: $soft-pink;
+    font-size: 0.8125rem;
+  }
+
+  &__comment {
+    font-size: 0.8125rem;
+    padding-top: 1.625rem;
+    letter-spacing: -0.23px;
+  }
+
+  @include respond-to(large) {
+    display: flex;
+    gap: 2rem;
+  }
+}

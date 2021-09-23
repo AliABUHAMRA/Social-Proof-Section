@@ -1,0 +1,20 @@
+.header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  @include respond-to(large) {
+    text-align: start;
+  }
+
+  &__title {
+    margin-bottom: 1.8rem;
+    letter-spacing: -1.14px;
+    @include respond-to(large) {
+      letter-spacing: -1.71px;
+    }
+  }
+  &__des {
+    color: $dark-grayish-purple;
+    font-size: 0.9375rem;
+    letter-spacing: -0.5px;
+  }
+}

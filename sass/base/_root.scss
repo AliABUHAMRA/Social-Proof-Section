@@ -1,0 +1,6 @@
+:root {
+  --fs-900: 2rem;
+  @media (min-width: 50em) {
+    --fs-900: 3rem;
+  }
+}
