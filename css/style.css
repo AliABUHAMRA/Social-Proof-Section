@@ -179,6 +179,16 @@ p {
   }
 }
 
+.my-link {
+  padding: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.my-link a {
+  text-decoration: none;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
