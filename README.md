@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/single-price-grid-component-IyMM5_NhZ)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/social-proof-section-Sms8_faie)
 - Live Site URL: [Live site URL](https://aliabuhumra.github.io/Social-Proof-Section/)
 
 ## My process
